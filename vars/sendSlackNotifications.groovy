@@ -1,4 +1,4 @@
-def sendSlackNotifications(String buildStatus = 'STARTED') {
+def call(String buildStatus = 'STARTED') {
     buildStatus = buildStatus ?: 'SUCCESS'
 
     def colorCode
